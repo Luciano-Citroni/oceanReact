@@ -48,3 +48,8 @@ conexao: mongodb+srv://admin:eZfL3a7tYcfSWw1H@cluster0.ymkksrq.mongodb.net/
 
 configurar variaveis de ambiente
 https://www.youtube.com/watch?v=_HGDTCQYoDc&list=PLzFYWfRVHp5L7d8IR--fNmNSTZ-iIAsI-&index=12&ab_channel=PauloSalvatore
+
+
+
+npm create vite
+cria front end
