@@ -1,0 +1,7 @@
+https://tailwindcss.com/
+pode ajudar no desenvolvimento do css
+
+https://flexboxfroggy.com/
+https://cssgridgarden.com/
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+https://css-tricks.com/snippets/css/complete-guide-grid/
