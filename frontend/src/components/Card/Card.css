@@ -3,14 +3,14 @@
     border-radius: 1rem; /* 1rem = 16px*/
     padding: 16px;
     margin: 16px;
-    width: 300px;
+    width: 250px;
     height: 280px;
     box-shadow: 5px 5px white;
 }
 
 .card > img {
     border-radius: 1rem;
-    width: 300px;
+    width: 200px;
 }
 
 .card > h2 {
