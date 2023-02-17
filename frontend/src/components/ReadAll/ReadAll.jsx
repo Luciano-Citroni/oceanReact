@@ -20,6 +20,16 @@ const items = [
         _id: '7544',
         nome: 'Summer Smith',
         imageUrl: 'https://rickandmortyapi.com/api/character/avatar/3.jpeg'
+    },
+    {
+        _id: '1314',
+        nome: 'Bath Smith',
+        imageUrl: 'https://rickandmortyapi.com/api/character/avatar/4.jpeg'
+    },
+    {
+        _id: '7841',
+        nome: 'Jarry Smith',
+        imageUrl: 'https://rickandmortyapi.com/api/character/avatar/5.jpeg'
     }
 ];
 /*
