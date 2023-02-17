@@ -1,8 +1,9 @@
+import Card from "../Card/Card";
+
 function ReadAll(){
-
-
-
-    return <div>ReadAll</div>
+    return <div className="ReadAll">
+        <Card />
+    </div>
 }
 
 
