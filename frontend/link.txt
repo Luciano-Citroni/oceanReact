@@ -34,3 +34,32 @@ row: Os itens são colocados da mesma forma que a direção do texto.
 row-reverse: Os itens são colocados em oposição à direção do texto.
 column: Os itens são colocados de cima para baixo.
 column-reverse: Os itens são colocados de cima para baixo.
+
+
+Order
+ele inverte a posição na linha - pode ser valores positivos como negativos
+
+
+
+align-self: tem a mesma propriedade que o align-items porem move apenas 1 item
+
+
+flex-wrap:
+
+nowrap: Cada item é ajustado a uma única linha.
+wrap: Os itens envolvem linhas adicionais.
+wrap-reverse: Os itens são agrupados em linhas adicionais ao contrário.
+
+
+
+flex-flow == flex-wrap + flex-direction
+
+
+
+align-content
+flex-start: As linhas são empacotadas no topo do container.
+flex-end: As linhas são embaladas na parte inferior do contêiner.
+center: Lines are packed at the vertical center of the container.
+space-between: As linhas são exibidas com espaçamento igual entre elas.
+space-around: As linhas são exibidas com espaçamento igual ao redor delas.
+stretch: As linhas são esticadas para caber no contêiner.
