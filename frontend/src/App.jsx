@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
 import ReadAll from './components/ReadAll/ReadAll'
+import Header from './components/Header/Header'
 
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
 
   return (
     <div className="App">
+      <Header />
       <ReadAll  />
     </div>
   )
