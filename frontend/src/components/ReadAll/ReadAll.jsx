@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import Card from "../Card/Card";
 import './ReadAll.css'
 
@@ -5,7 +6,7 @@ import './ReadAll.css'
 // Isso facilita o trabalho aqui no Front, para conseguir estruturar
 // comportamento, sem precisar depender do back para receber dados
 
-const items = [
+const itemsMock = [
     {
         _id: '1234',
         nome: 'Rick Sanchez',
@@ -46,6 +47,33 @@ const items = [
 // as { } permite colocar qualquer codigo JavaScript nelas 
 
 function ReadAll(){
+
+    //o useState retorna 2 coisas
+    // 1: valor do estado
+    // 2: a função que atualiza o valor do estado
+    //const estadoDeItems = useState([]);
+    // const items = estadoDeItems[0];
+    // const setItems = estadoDeItems[1];
+    const [items, setItems] = useState([]);
+
+    // realizar a requisição para o backend para receber a lista de items 
+    async function realizarRequisicao(){
+        const url = 'http://localhost:3000/item/';
+        const response = await fetch(url);
+        const data = await response.json();
+        console.log(data);
+
+
+        setItems(data);
+    }
+
+    //1: uma funcão que será executada
+    //2: uma lista de dependencia
+    useEffect(function (){
+        realizarRequisicao();
+    }, []);
+    
+
     return <div className="ReadAll">
         {items.map(function(item) {
             return <Card key={"card-" + item._id} item={item}/>;
