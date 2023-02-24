@@ -79,8 +79,10 @@ async function main(){
     res.send('deletado com sucesso ' + id);
   });
 
-
-  app.listen(3000); //so funciona local, tem que colocar a porta do servidor da hospedagem
+  const port = process.env.PORT || 3000;
+  app.listen(port, function(){
+    console.log('Sevidor rodando na porta: ' + port);
+  }); //so funciona local, tem que colocar a porta do servidor da hospedagem
 }
 
 main();
