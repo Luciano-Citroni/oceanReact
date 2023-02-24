@@ -58,7 +58,8 @@ function ReadAll(){
 
     // realizar a requisição para o backend para receber a lista de items 
     async function realizarRequisicao(){
-        const url = 'http://localhost:3000/item/';
+        //const url = 'http://localhost:3000/item/'; url local
+        const url = 'https://rest-ocean-luciano.onrender.com/item/';
         const response = await fetch(url);
         const data = await response.json();
         console.log(data);
